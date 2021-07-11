@@ -339,6 +339,7 @@ footer span {
 .nivel {
   border-radius: 0.5rem;
   padding: 0.4rem;
+  font-weight: bold;
   color: var(--primario);
 }
 
@@ -347,7 +348,7 @@ footer span {
 }
 
 .habilidades .nivel1 {
-  background-color: #0096d1;
+  background-color: #00ace4;
   grid-column: 1 / 5;
 }
 
