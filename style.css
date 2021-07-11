@@ -209,7 +209,7 @@ h1 span {
 
 .formulario{
   background-color: var(--subcuadro);
-  /*Toma el valor mas pequeno, ahorra mq */
+  /*Toma el valor mas pequeno, ahorra usar un mq */
   width: min(60rem, 100%); 
   margin: 0 auto;
   padding: 2rem;
@@ -229,7 +229,7 @@ h1 span {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .contenedor-campos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
