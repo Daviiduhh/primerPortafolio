@@ -4,6 +4,9 @@
   --cuadro: #31353D;
   --subcuadro: #445878;
   --titulo: #EEEFF7;
+  --css: #00ace4;
+  --html: #fe4c1e;
+  --js: #efd81d;
 }
 
 html {
@@ -142,7 +145,7 @@ h1 span {
 }
 
 .hero {
-  background-image: url(hero.jpg);
+  background-image: url(img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
@@ -348,16 +351,71 @@ footer span {
 }
 
 .habilidades .nivel1 {
-  background-color: #00ace4;
+  background-color: var(--css);
   grid-column: 1 / 5;
 }
 
 .habilidades .nivel2 {
-  background-color: #fe4c1e;
+  background-color: var(--html);
   grid-column: 1 / 6;
 }
 
 .habilidades .nivel3 {
-  background-color: #efd81d;
+  background-color: var(--js);
   grid-column: 1 / 5;
+}
+
+.portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portafolio div{
+  justify-content: center;
+}
+
+.portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+.portafolio-grid .project {
+  background-color: var(--subcuadro);
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.portafolio-grid .img-project {
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 0.5rem ;
+  border-radius: 1rem;
+}
+
+.portafolio-grid .boton-grid {
+  padding: 0 30%;
+}
+
+@media (min-width: 768px) {
+  .portafolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .boton-grid {
+    font-size: 1.5rem;
+  }
 }
