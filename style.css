@@ -332,14 +332,43 @@ footer span {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
 }
 
-.habilidades:nth-child(1) {
+.nivel {
+  border-radius: 0.5rem;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.habilidades .item1 {
   grid-column: 1 / 7;
 }
 
-.habilidades:nth-child(2),
-.habilidades:nth-child(3),
-.habilidades:nth-child(3) {
+.habilidades .item2 {
+  grid-row: 2 / 3;
+}
+
+.habilidades .nivel1 {
+  background-color: #0096d1;
+  grid-column: 2 / 6;
+}
+
+.habilidades .item3 {
+  grid-row: 3 / 4;
+}
+
+.habilidades .nivel2 {
+  background-color: #fe4c1e;
+  grid-column: 2 / 7;
+}
+
+.habilidades .item4 {
+  grid-row: 4 / 5;
+}
+
+.habilidades .nivel3 {
+  background-color: #efd81d;
   grid-column: 2 / 6;
 }
