@@ -76,7 +76,7 @@ body {
 }
 
 .boton {
-  padding: 1rem, 3rem;
+  padding: 0.5rem 3rem;
   background-color: var(--secundario);
   color: var(--primario);
   font-weight: bold;
@@ -397,8 +397,8 @@ footer span {
   border-radius: 1rem;
 }
 
-.portafolio-grid .boton-grid {
-  padding: 0 30%;
+.portafolio-grid .boton {
+  padding: 0 2rem;
 }
 
 @media (min-width: 768px) {
@@ -410,8 +410,8 @@ footer span {
   }
 }
 
-@media (max-width: 480px) {
-  .boton-grid {
-    font-size: 1.5rem;
+@media (min-width: 480px) {
+  .portafolio-grid .boton-grid {
+    padding: 0 4rem;
   }
 }
