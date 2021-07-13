@@ -167,7 +167,7 @@ h1 span {
 
 .contenido-hero h2,
 .contenido-hero p {
-  color: whitesmoke;
+  color: var(--titulo);
 }
 
 .servicios {
@@ -369,10 +369,6 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.portafolio div{
   justify-content: center;
 }
 
