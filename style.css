@@ -380,6 +380,14 @@ footer a:hover {
   align-items: center;
   justify-content: center;
 }
+/*
+*/
+@media (max-width: 900px) {
+  .boton-portafolio {
+    display: block;
+    width: 90%;
+  } 
+}
 
 .portafolio-grid {
   display: grid;
