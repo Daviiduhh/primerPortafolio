@@ -399,10 +399,8 @@ footer a:hover {
 
 .portafolio-grid .project {
   background-color: var(--subcuadro);
-  aspect-ratio: 1;
   border-radius: 1rem;
   padding: 1rem;
-  margin: 1rem;
   margin-bottom: 2rem;
 }
 
